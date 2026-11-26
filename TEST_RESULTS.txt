@@ -1,0 +1,96 @@
+
+> studyplan-hm2@5.0.0 test
+> node --test test.js
+
+TAP version 13
+# (node:533) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: StudyPlan REST API integration
+    # Subtest: 01 health / static assets
+    ok 1 - 01 health / static assets
+      ---
+      duration_ms: 49.600265
+      type: 'test'
+      ...
+    # Subtest: 02 unauthorized rejected
+    ok 2 - 02 unauthorized rejected
+      ---
+      duration_ms: 3.581838
+      type: 'test'
+      ...
+    # Subtest: 03 registration and duplicate email
+    ok 3 - 03 registration and duplicate email
+      ---
+      duration_ms: 171.788891
+      type: 'test'
+      ...
+    # Subtest: 04 invalid login and valid login
+    ok 4 - 04 invalid login and valid login
+      ---
+      duration_ms: 116.177319
+      type: 'test'
+      ...
+    # Subtest: 05 subject create/read/update
+    ok 5 - 05 subject create/read/update
+      ---
+      duration_ms: 9.276635
+      type: 'test'
+      ...
+    # Subtest: 06 validation and duplicate subject
+    ok 6 - 06 validation and duplicate subject
+      ---
+      duration_ms: 4.841653
+      type: 'test'
+      ...
+    # Subtest: 07 task create/read/update
+    ok 7 - 07 task create/read/update
+      ---
+      duration_ms: 8.34899
+      type: 'test'
+      ...
+    # Subtest: 08 data persists in SQLite
+    ok 8 - 08 data persists in SQLite
+      ---
+      duration_ms: 0.570388
+      type: 'test'
+      ...
+    # Subtest: 09 separate accounts and ownership
+    ok 9 - 09 separate accounts and ownership
+      ---
+      duration_ms: 61.000626
+      type: 'test'
+      ...
+    # Subtest: 10 SQL injection handled as data
+    ok 10 - 10 SQL injection handled as data
+      ---
+      duration_ms: 5.737185
+      type: 'test'
+      ...
+    # Subtest: 11 delete task and subject
+    ok 11 - 11 delete task and subject
+      ---
+      duration_ms: 3.767247
+      type: 'test'
+      ...
+# Server mode: Node HTTP (offline fallback)
+    # Subtest: 12 logout invalidates session
+    ok 12 - 12 logout invalidates session
+      ---
+      duration_ms: 2.39994
+      type: 'test'
+      ...
+    1..12
+ok 1 - StudyPlan REST API integration
+  ---
+  duration_ms: 452.429522
+  type: 'test'
+  ...
+1..1
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 539.007408
